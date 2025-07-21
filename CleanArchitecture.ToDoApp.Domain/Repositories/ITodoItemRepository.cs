@@ -10,6 +10,6 @@ namespace CleanArchitecture.ToDoApp.Domain.Repositories
         Task<IEnumerable<TodoItem>> GetIncompleteAsync(CancellationToken cancellationToken = default);
         Task AddAsync(TodoItem todoItem, CancellationToken cancellationToken = default);
         Task UpdateAsync(TodoItem todoItem, CancellationToken cancellationToken = default);
-        Task DeleteAsync(Guid id, CancellationToken cancellationToken = default);
+        Task DeleteAsync(TodoItem todoItem, CancellationToken cancellationToken = default);
     }
 }
