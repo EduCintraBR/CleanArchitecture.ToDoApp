@@ -25,7 +25,7 @@
             CreatedAt = DateTime.UtcNow;
         }
 
-        public void MarkAsCompleted()
+        public void MarkAsComplete()
         {
             IsCompleted = true;
             CompletedAt = DateTime.UtcNow;
